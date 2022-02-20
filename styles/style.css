@@ -20,10 +20,12 @@ input {
     height: 40px;
     border-radius: 10px;
     box-sizing: border-box;
+    margin: 0;
 }
 
 #form {
-    width: 40%;
+    width: 30%;
+    margin: 0;
 }
 
 button {
@@ -48,6 +50,18 @@ h3 {
 p {
     color: white;
 }
-h1{
+
+h1 {
     color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#opera {
+    display: inline-flex;
+    width: 10rem;
 }

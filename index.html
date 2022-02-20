@@ -15,6 +15,7 @@
     <div id="container">
         <header>
             <h1>Calculadora Simples</h1>
+            <hr>
         </header>
 
         <div id="form">
@@ -22,25 +23,29 @@
                 <span class="input-group-text" id="inputGroup-sizing-sm">Primeiro</span>
                 <input type="number" id="n1" class="form-control" aria-label="Sizing example input"
                     aria-describedby="inputGroup-sizing-sm" placeholder="Digite o primeiro número">
-            </div>
-            <select name="" id="selector">
-                <option value="+">+</option>
-                <option value="-">-</option>
-                <option value="*">*</option>
-                <option value="/">/</option>
-            </select><br><br>
+            </div><br>
+            <div id="opera" class="input-group mb-3">
+                <label id="l-opera" class="input-group-text" for="inputGroupSelect01">Operação</label>
+                <select id="selector" class="form-select" id="inputGroupSelect01">
+                    <!-- <option selected>Escolha...</option> -->
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+            </div><br><br>
             <div class="input-group input-group-sm mb-3">
                 <span class="input-group-text" id="inputGroup-sizing-sm">Segundo</span>
                 <input type="number" id="n2" class="form-control" aria-label="Sizing example input"
                     aria-describedby="inputGroup-sizing-sm" placeholder="Digite o segundo número">
             </div><br><br>
-            <button type="button" class="btn btn-outline-danger" onclick="calcular()">Calcular</button><br>
+            <button type="button" class="btn btn-outline-primary" onclick="calcular()">Calcular</button><br>
         </div>
         <div><br>
             <h3 id="resultado"></h3>
         </div>
 
-        <p id="me">Feito por Arthur Rezende</p>
+        <p id="me">Feito por Arthur Rezende 🤘😎</p>
     </div>
     <script src="./scripts/index.js"></script>
 </body>

@@ -21,7 +21,7 @@ function calcular(n1, n2) {
             break
 
         case '/':
-            calculo = Math.round((n1 / n2))
+            calculo = (n1 / n2)
             if (Number.isNaN(calculo)) {
                 document.getElementById("resultado").innerHTML = `Insira um divisível válido.`
             } else {
